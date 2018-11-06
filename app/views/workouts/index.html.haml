@@ -1,1 +1,8 @@
 %h1 This is the Worouts#Index placeholder
+
+- @workouts.each do |workout|
+
+	%h2= link_to workout.date, workout
+	%h3= workout.workout
+	%p= workout.intensity
+	%p= workout.length
