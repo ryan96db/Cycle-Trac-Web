@@ -4,6 +4,17 @@
 	%p= @workout.intensity
 	%p= @workout.length
 
+#songs
+	
+	%h2 Songs
+	= render @workout.songs
+
+	%h3 Add a Song
+	= render "songs/form"
+
+
+
+
 = link_to "Back", root_path |
 = link_to "Edit", edit_workout_path(@workout)
 = link_to "Delete", workout_path(@workout), method: :delete, data: {confirm: "Are you sure?"}
