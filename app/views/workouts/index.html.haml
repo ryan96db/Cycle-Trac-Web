@@ -1,3 +1,5 @@
+%h1#workoutheader Cycling Workouts
+
 #index_workout
 	-	@workouts.each do |workout|
 		%h2= link_to workout.date.strftime("%A, %B %d, %Y"), workout

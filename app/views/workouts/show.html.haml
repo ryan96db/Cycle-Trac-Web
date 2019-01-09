@@ -1,12 +1,10 @@
 #workout
 	%p= @workout.date
-	%p= @workout.workout
-	%p= @workout.intensity
-	%p= @workout.length
+
 
 #songs
 	
-	%h2 Songs
+	%h2#songheader Songs
 	= render @workout.songs
 
 	%h3 Add a Song

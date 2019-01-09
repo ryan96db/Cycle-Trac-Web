@@ -15,10 +15,10 @@ ActiveRecord::Schema.define(version: 2018_11_07_043647) do
   create_table "songs", force: :cascade do |t|
     t.string "title"
     t.integer "duration"
-    t.string "description"
+    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "workout_id"
+    t.text "workout_id"
   end
 
   create_table "workouts", force: :cascade do |t|

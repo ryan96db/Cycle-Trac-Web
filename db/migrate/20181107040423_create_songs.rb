@@ -3,7 +3,7 @@ class CreateSongs < ActiveRecord::Migration[5.2]
     create_table :songs do |t|
       t.string :title
       t.integer :duration
-      t.string :description
+      t.text :description
 
       t.timestamps
     end
