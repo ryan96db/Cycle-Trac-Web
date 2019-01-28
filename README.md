@@ -1,24 +1,3 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Cycle-Trac is application that tracks playlists created for each cycling class. With this application, you are able to create a workout, and add songs to the workout. Each song has a title, duration, and summary of workout during that song (30 second sprints, increase resistance on bike, etc.). The homepage shows every workout that the user has created. Originally intended to be a web application written in Ruby, it is now currently being reworked into an iOS application.
