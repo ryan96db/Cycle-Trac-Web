@@ -14,29 +14,31 @@
  *= require_self
  */
 
+ /*Color of CycleTrac Logo:
+ Black: #000000;
+ Orange: #E78200;
+ Gray: #7E7E7E*/
+
  @import "bootstrap-sprockets";
 @import "bootstrap";
 
 html {
 	height: 100%;
 }
-body {background: #FFEFBA;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+body {background: #000000;  /* fallback for old browsers */
 
 }
 
 .navbar-default{
-	background: rgba(250, 250, 250, 0.5);
+	background: #000000;
 	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
 	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
-	border: none;
-	border-radius: 0;
+	border: solid#7E7E7E;
+	border-radius: 10px;
 
 	
 .navbar-brand{
-	color: red;
+	color: #E78200;
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -47,24 +49,35 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 
 .navbar-link {
 
-	color: red;
+	color: #E78200;
 	font-weight: 700;
 	font-size: 20px;
-	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 1px;
 	line-height: 1;
-	text-align: right;
+	text-align: center;
 
 	}
 
 }
 
+#logo {
+	text-align: center;
+	display: inline-block;
+	clear: both;
+
+	position: relative;
+}
+
+a {
+	display: block;
+	text-align: center;
+}
 	 
 
 
 #workoutheader {
-	color: red;
+	color: #E78200;
 }
 
 
