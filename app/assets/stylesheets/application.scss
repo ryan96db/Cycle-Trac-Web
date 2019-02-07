@@ -22,6 +22,7 @@
  @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/*Homepage*/
 html {
 	height: 100%;
 }
@@ -56,6 +57,7 @@ body {background: #000000;  /* fallback for old browsers */
 	letter-spacing: 1px;
 	line-height: 1;
 	text-align: center;
+	text-decoration: none;
 
 	}
 
@@ -91,3 +93,64 @@ a {
 	}
 }
 
+#recents {
+	text-decoration: none;
+	color: #E78200;
+}
+
+/*End of Homepage*/
+
+/*New Workout Page*/
+
+#Newworkoutheader {
+	color: #E78200;
+	text-align: center;
+
+}
+
+label {
+	color: #E78200;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+}
+
+.btn {
+	background-color: #7E7E7E;
+	color: #000000;
+	font-weight: 1px;
+	display: block;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 8px;
+	position: relative;
+}
+
+#cancelbutton {
+	padding: 6px 12px;
+    font-size: 14px;
+    background-color: #7E7E7E;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.btn:hover, #cancelbutton:hover {
+	background-color: #E78200;
+}
+
+.form-control {
+	color: #000000;
+	background-color: #7E7E7E;
+	margin-bottom: 5px;
+}
+
+pre {
+	background-color: #7E7E7E;
+}
+
+#songheader {
+	text-align: center;
+	color: #E78200;
+	
+}
