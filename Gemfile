@@ -5,13 +5,11 @@ ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'
-group :development do 
-   gem 'sqlite3'    #gem to use in development environment
+
+group :devlopment, :test do
+  gem 'sqlite3'
 end
 
-group :production do 
-  gem 'pg'         #gem to use in production environment
-end
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
