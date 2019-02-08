@@ -1,18 +1,17 @@
 #workout
-	%p= @workout.date
+	%h1#workoutname= @workout.intensity
 
 
 #songs
 	
 	%h2#songheader Songs
 	= render @workout.songs
+	
 
 	%h3#songheader Add a Song
 	= render "songs/form"
 
 
-
-
 = link_to "Back", root_path, id: "cancelbutton"
-= link_to "Edit", edit_workout_path(@workout), id: "cancelbutton"
-= link_to "Delete", workout_path(@workout), method: :delete, data: {confirm: "Are you sure?"}, id: "cancelbutton",
+= link_to "Edit Workout", edit_workout_path(@workout), id: "cancelbutton"
+= link_to "Delete Workout", @workout, method: :delete, data: {confirm: "Are you sure?"}, id: "cancelbutton"

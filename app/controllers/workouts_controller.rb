@@ -21,6 +21,7 @@ class WorkoutsController < ApplicationController
 	end
 
 	def edit
+		@workout = Workout.find(params[:id])
 	end
 
 	def update
@@ -32,6 +33,7 @@ class WorkoutsController < ApplicationController
 	end
 
 	def destroy
+		@dog = Workout.find(params[:id])
 		@workout.destroy
 		redirect_to root_path
 	end

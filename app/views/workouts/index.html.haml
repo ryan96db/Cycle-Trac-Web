@@ -2,4 +2,5 @@
 
 #index_workout
 	-	@workouts.each do |workout|
-		%h2= link_to workout.date.strftime("%A, %B %d, %Y"), workout, id:"recents"
+		%h2= link_to workout.intensity, workout, id: "recents"
+		%h2= link_to workout.date.strftime("%A, %B %d, %Y"), workout, id: "recents"
