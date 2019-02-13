@@ -33,6 +33,7 @@ class WorkoutsController < ApplicationController
 	end
 
 	def destroy
+		http_basic_authenticate_with name: "ryan96db", password: "Victorian#2", except: [:index, :show]
 		@dog = Workout.find(params[:id])
 		@workout.destroy
 		redirect_to root_path
